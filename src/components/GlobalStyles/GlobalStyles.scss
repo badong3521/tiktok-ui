@@ -1,14 +1,26 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 
 :root {
+    --black-color : #000;
+
+
     --primary-color : #fe2c55;
+    --main-color : #a6a7ab;
+    --default-layout-header-height : 60px;
+    --default-layout-header-width : 1150px;
+    --text-color:#161823;
+    --white-color:#fff;
+
+    //Sidebar
+    --default-layout-sidebar-width : 340px;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -16,8 +28,29 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.5rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+input,
+button,
+[tabindex] {
+    outline: none;
+    border:none;
+    background-color:var(--white-color);
+}
+
+a ,
+[href] {
+    text-decoration: none;
+    color : #000;
+}
+
+
+.df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

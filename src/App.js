@@ -8,7 +8,7 @@ function App() {
             <div className="App">
                 <Routes>
                     {publicRoutes.map((route, index) => {
-                        const Page = route.component;
+                        const PageComponent = route.component;
 
                         let Layout = DefaultLayout;
 
@@ -24,7 +24,7 @@ function App() {
                                 path={route.path}
                                 element={
                                     <Layout>
-                                        <Page />
+                                        <PageComponent />
                                     </Layout>
                                 }
                             />

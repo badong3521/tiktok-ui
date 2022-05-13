@@ -1,0 +1,30 @@
+
+.menu-list {
+    width:224px;
+    margin-top: 12px;
+}
+
+.item-menu {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 22px;
+    padding: 10px 16px;
+    margin: 0px;
+    min-width: 223px;
+    color: var(--text-color);
+    &:hover {
+        background-color:rgba(22, 24, 35, 0.03);
+    }
+}
+
+
+.icon {
+    margin-right: 8px;
+    width: 20px;
+    font-weight: 300;
+}
+
+
+.titles {
+    font-weight: 500;
+}
