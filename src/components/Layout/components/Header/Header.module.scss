@@ -147,7 +147,35 @@
 
 
 
-
 .actions {
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+.upload ,
+.inbox {
+    width: 32x;
+    color:var(--text-color);
+    height: 32px;
+    margin: 0 10px;
+}
+.messager {
+    width: 26px;
+    height: 34px;
+    margin: 0 10px;
+    color:var(--text-color);
+}
+
+
+.avatar {
+    width: 35px;
+    border-radius:999px;
+    margin-left: 10px;
+}
+
+
+// background-color: rgba(84, 84, 84, 0.92);
+
+
