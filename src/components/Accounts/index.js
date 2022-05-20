@@ -1,27 +1,26 @@
 import style from './Accounts.module.scss';
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(style);
 
-function Accounts() {
+function Accounts({ data }) {
     return (
-        <div className={cx('wrapper')}>
+        <Link to={`/@${data.nickname}`} className={cx('wrapper')}>
             <span>
-                <img
-                    src="https://cdn.sforum.vn/sforum/wp-content/uploads/2022/05/tiktoker-dao-le-phuong-hoa-dat-10-trieu-follow-lot-top-10-tai-khoan-nhieu-nguoi-theo-doi-nhat-1645685521-5.jpg"
-                    alt="hoaaa"
-                    className={cx('avatar')}
-                />
+                <img src={data.avatar} alt="avatar" className={cx('avatar')} />
             </span>
             <span className={cx('container-name')}>
                 <div className={cx('df')}>
-                    <h4 className={cx('usename')}>hoaasiluili</h4>
-                    <FontAwesomeIcon icon={faCheckCircle} className={cx('check')} />
+                    <h4 className={cx('usename')}>{data.nickname}</h4>
+                    {data.tick && (
+                        <FontAwesomeIcon icon={faCheckCircle} className={cx('check')} />
+                    )}
                 </div>
-                <h5 className={cx('name')}>vu thi hoa</h5>
+                <h5 className={cx('name')}>{data.full_name}</h5>
             </span>
-        </div>
+        </Link>
     );
 }
 
