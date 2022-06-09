@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import HeadlessTippy from '@tippyjs/react/headless';
 // Css Tippy
 import 'tippy.js/dist/tippy.css'; // optional
